@@ -17,56 +17,108 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <header class="hero hero-v2">
-    <div class="container">
-      <nav class="topnav">
-        <div class="topnav-left">
+  <nav class="topnav premium-nav">
+    <div class="container nav-container">
+      <div class="nav-left">
+        <a href="/" class="logo-link">
           <img
             class="logo-mark"
             src="./assets/scholarshipicon.png"
             alt="ScholarshipBoard logo"
             loading="eager"
           />
-          <div class="brandline">
-            <div class="brand">ScholarshipBoard</div>
-            <div class="brand-sub">support@scholarshipboard.io</div>
+          <span class="brand">ScholarshipBoard</span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li><a href="#scholarships">Find Scholarships</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#scholarship-previews">Top Countries</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-mobile-cta">
+          <a href="#login" class="login-link">Log in</a>
+          <a href="#signup" class="btn-signup">Sign up</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="#login" class="login-link">Log in</a>
+        <a href="#signup" class="btn-signup">Sign up</a>
+      </div>
+      
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero hero-v7">
+    <div class="container hero-container-v7">
+
+      <div class="hero-card-v7">
+        <div class="hero-split-v7">
+          <div class="hero-left-v7">
+            <h1 class="hero-title-v7">
+              One platform.<br />
+              All scholarships.<br />
+              <span class="highlight-v7">100% Matches</span>
+            </h1>
+            <p class="hero-subtext-v7">
+              We're on a mission to make college more affordable and more
+              accessible. Join today to get personalized scholarship and college matches.
+            </p>
+
+            <div class="hero-actions-v7">
+              <a href="#scholarships" class="btn btn-primary-v7">Apply to scholarships</a>
+              <div class="hero-badge-small-v7">
+                <span class="badge-icon-v7" aria-hidden="true">🛡️</span>
+                <span>100% free.</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="topnav-center">
-          <a href="#spinwheel">Scholarship Quiz</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#scholarship-previews">Top Scholarships</a>
-          <a href="#contact">Contact</a>
-        </div>
+          <div class="hero-right-v7">
+            <div class="collage-container-v7">
+              <!-- Student 1 -->
+              <div class="collage-item-v7 student-1-v7">
+                <img src="./assets/student-1.png" alt="Student Portrait 1" />
+              </div>
+              
+              <!-- Floating Card: Vetted Programs -->
+              <div class="collage-item-v7 card-vetted-v7">
+                <div class="card-icon-v7">🏆</div>
+                <div class="card-text-v7">
+                  <strong>5,914+</strong> vetted programs<br />
+                  <span>$81 million+ in scholarships</span>
+                </div>
+              </div>
 
-        <div class="topnav-right">
-          <a class="topnav-link" href="#spinwheel">Student Support</a>
-          <a class="btn btn-pill" href="#spinwheel">Get Free Matches</a>
-        </div>
-      </nav>
+              <!-- Student 2 -->
+              <div class="collage-item-v7 student-2-v7">
+                <img src="./assets/student-2.png" alt="Student Portrait 2" />
+              </div>
 
-      <div class="hero-stage-v2 hero-stage-collage">
-        <div class="hero-copy">
-          <div class="badge">
-            <span class="badge-icon" aria-hidden="true">⚡</span>
-            <span>50-100% scholarships available this season</span>
-          </div>
+              <!-- Floating Card: Trusted Badge -->
+              <div class="collage-item-v7 badge-trusted-v7">
+                <span class="badge-check-v7">✔</span>
+                <span>Trusted by 1.5 million students</span>
+              </div>
 
-          <h1>Smart Scholarship Matches<br />for Every Dream</h1>
-          <p class="hero-sub">
-            Curated scholarship guidance for Australia, USA, UK, Japan & India - delivered on WhatsApp.
-          </p>
-
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" href="#spinwheel">Get Started</a>
-            <a class="btn btn-outline btn-lg btn-outline-gray" href="#spinwheel">Spin & Win</a>
-          </div>
-        </div>
-
-        <div class="hero-collage">
-          <div class="hero-single-media">
-            <img src="./assets/hero-placeholder1.webp" alt="Scholarship Advisor" loading="eager" />
+              <!-- Floating Card: Analyzing -->
+              <div class="collage-item-v7 card-analyzing-v7">
+                <div class="card-loader-v7">✨</div>
+                <div class="card-text-v7">
+                  <strong>Calculating your matches</strong><br />
+                  <span>Checking grades, interests...</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -74,175 +126,399 @@
   </header>
 
   <main>
-    <section id="spinwheel" class="section section-spin">
-      <div class="container">
-        <h2>Spin & Win Your Scholarship Guide</h2>
-        <p class="section-intro">
-          Enter your details and spin the wheel to unlock your personalized scholarship guide instantly.
-        </p>
+    <section id="scholarships" class="section section-form-v8">
+      <div class="container container-form-v8">
+        <div class="form-header-v8">
+          <div class="badge-v8">
+            <span class="badge-icon-v8">🎓</span>
+            <span>No scholarship money goes unclaimed</span>
+          </div>
+          
+          <h2 class="form-title-v8">
+            Win more scholarships
+            <span class="gradient-text-v8">with less effort</span>
+          </h2>
+          
+          <p class="form-intro-v8">
+            Simplify and focus your application process with the one-stop platform for vetted scholarships.
+          </p>
+        </div>
 
-        <div class="spin-layout">
-          <form id="scholarshipForm" class="form-card">
-            <label>
-              Name
-              <input type="text" id="name" placeholder="Your full name" required />
-            </label>
+        <form id="scholarshipForm" class="form-card-v8">
+          <div class="form-body-v8">
+            
+            <!-- Contact Info Row -->
+            <div class="form-grid-2-v8">
+              <div class="form-group-v8">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="name@example.com" required />
+              </div>
+              <div class="form-group-v8">
+                <label>Phone Number</label>
+                <input type="tel" id="mobile" placeholder="+1 234 567 890" required />
+              </div>
+            </div>
 
-            <label>
-              Country of Interest
-              <select id="country" required>
-                <option value="">Select country</option>
-                <option value="Australia">Australia</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Japan">Japan</option>
-                <option value="India">India</option>
-              </select>
-            </label>
+            <!-- Birthday -->
+            <div class="form-group-v8">
+              <label>Your birthday</label>
+              <div class="birthday-row-v8">
+                <div class="select-wrapper-v8">
+                  <select id="birthMonth" required>
+                    <option value="">Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                </div>
+                <input type="number" id="birthDay" placeholder="Day" min="1" max="31" required />
+                <input type="number" id="birthYear" placeholder="Year" min="1990" max="2020" required />
+              </div>
+            </div>
 
-            <label>
-              Study Level
-              <select id="studyLevel" required>
-                <option value="">Select level</option>
-                <option value="High School">High School</option>
-                <option value="Undergraduate">Undergraduate</option>
-                <option value="Postgraduate">Postgraduate</option>
-              </select>
-            </label>
+            <!-- Education Info Row -->
+            <div class="form-grid-2-v8">
+              <div class="form-group-v8">
+                <label>Current school level</label>
+                <div class="select-wrapper-v8">
+                  <select id="studyLevel" required>
+                    <option value="">Select level</option>
+                    <option value="High School">High School</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group-v8">
+                <label>Field of study</label>
+                <div class="select-wrapper-v8">
+                  <select id="fieldOfStudy" required>
+                    <option value="">Select field</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Business">Business</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Medicine">Medicine & Health</option>
+                    <option value="Arts">Arts & Humanity</option>
+                    <option value="Science">Pure/Natural Sciences</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-            <label>
-              Field of Study
-              <input type="text" id="fieldOfStudy" placeholder="E.g. Computer Science" required />
-            </label>
+            <!-- CTA Button -->
+            <div class="form-actions-v8">
+              <button type="submit" id="submitBtn" class="btn-cta-v8">Check for Scholarships &rarr;</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-            <label>
-              WhatsApp Number
-              <input type="tel" id="whatsapp" placeholder="E.g. 919876543210" required />
-            </label>
+      <!-- Result Overlay (v8) - Premium Experience -->
+      <div id="resultOverlay" class="result-overlay-v8 hidden">
+        <div class="result-content-box-v8">
+          <!-- Loader State -->
+          <div id="loaderContainerV8" class="v8-loader-container">
+            <div class="v8-spinner"></div>
+            <p id="v8StatusText" class="v8-status-text">Analyzing your profile...</p>
+          </div>
 
-            <button type="submit" class="btn btn-primary">Spin Now</button>
-            <p class="small-note">
-              By submitting, you agree to receive scholarship updates via WhatsApp.
-            </p>
-          </form>
-
-          <div class="wheel-card">
-            <div class="wheel-pointer" aria-hidden="true"></div>
-            <div id="wheel" class="wheel" role="img" aria-label="Scholarship reward spin wheel"></div>
-            <p id="resultText" class="result-text">Spin to reveal your reward.</p>
-            <a id="claimButton" class="btn btn-success hidden" target="_blank" rel="noopener noreferrer">
-              Claim Your Scholarship Guide via WhatsApp
+          <!-- Success State -->
+          <div id="successContainerV8" class="v8-success-box hidden">
+            <div class="v8-success-badge">✨ 8 Matches Found</div>
+            <h2 id="resultTitleV8">Your personalized guide is ready!</h2>
+            <p id="resultTextV8">We've matched you with 8 high-value scholarships. Claim your comprehensive guide via WhatsApp to start applying today.</p>
+            <a id="claimButtonV8" class="btn-claim-v8" target="_blank" rel="noopener noreferrer">
+              View My Scholarships &rarr;
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="how-it-works" class="section">
+
+
+    <section id="how-it-works" class="section section-how-it-works-v9">
       <div class="container">
-        <h2>How It Works</h2>
-        <div class="cards cards-3">
-          <article class="card">
-            <div class="icon">🎓</div>
-            <h3>Sign Up & Spin</h3>
-            <p>Enter your details, spin the wheel, and see your reward instantly.</p>
+        <h2 class="section-title-v9">How it Works</h2>
+        
+        <div class="how-it-works-grid-v9">
+          <!-- Step 1: Check Eligibility -->
+          <article class="how-card-v9">
+            <div class="how-card-header-v9">
+              <span class="how-icon-v9">📋</span>
+              <h3>Check Eligibility</h3>
+            </div>
+            <div class="how-visual-v9 card-visual-check-v9">
+              <div class="btn-3d-v9 btn-check-v9">CHECK</div>
+              <div class="hand-cursor-v9">👆</div>
+            </div>
           </article>
-          <article class="card">
-            <div class="icon">📲</div>
-            <h3>Get Scholarships via WhatsApp</h3>
-            <p>We'll send your curated scholarship guide directly to your WhatsApp.</p>
+
+          <!-- Step 2: Get Matched -->
+          <article class="how-card-v9">
+            <div class="how-card-header-v9">
+              <span class="how-icon-v9">✨</span>
+              <h3>Get Matched</h3>
+            </div>
+            <div class="how-visual-v9 card-visual-match-v9">
+              <div class="logo-path-v9">
+                <div class="uni-logo-v9 logo-1-v9">MIT</div>
+                <div class="uni-logo-v9 logo-2-v9">Stanford</div>
+                <div class="uni-logo-v9 logo-3-v9">Harvard</div>
+                <div class="uni-logo-v9 logo-4-v9">Oxford</div>
+                <!-- Bee removed -->
+              </div>
+            </div>
           </article>
-          <article class="card">
-            <div class="icon">✅</div>
-            <h3>Apply & Track</h3>
-            <p>Follow up, apply, and never miss a scholarship deadline.</p>
+
+          <!-- Step 3: Apply -->
+          <article class="how-card-v9">
+            <div class="how-card-header-v9">
+              <span class="how-icon-v9">📩</span>
+              <h3>Apply</h3>
+            </div>
+            <div class="how-visual-v9 card-visual-apply-v9">
+              <div class="btn-3d-v9 btn-apply-v9">APPLY</div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="scholarship-previews" class="section section-alt">
+    <section id="scholarship-previews" class="section section-previews-v10">
       <div class="container">
-        <h2>Scholarship Previews</h2>
-        <div class="cards cards-5">
-          <article class="card scholarship-card">
-            <h3>Australia</h3>
-            <ul>
-              <li>Endeavour</li>
-              <li>Australia Awards</li>
-              <li>UNSW Scholarships</li>
-            </ul>
+        <div class="previews-header-v10">
+          <div class="previews-title-group-v10">
+            <div class="previews-badge-v10">🛡️ Vetted Scholarships Accepting Applications</div>
+            <h2 class="previews-title-v10">High-Value Opportunities</h2>
+            <p class="previews-subtitle-v10">Don't miss these curated scholarships. Apply now to maximize your financial aid.</p>
+          </div>
+          <a href="#" class="btn-view-all-v10">View All Scholarships →</a>
+        </div>
+
+        <div class="scholarship-grid-v10">
+          <!-- Card 1 -->
+          <article class="scholar-card-v10">
+            <div class="card-img-wrapper-v10">
+              <img src="./assets/2.webp" alt="Making Waves Scholarship">
+            </div>
+            <div class="card-body-v10">
+              <h4 class="card-body-title-v10">"Making Waves" Scholarship for Women</h4>
+              <div class="info-table-v10">
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Offered by</span>
+                  <span class="info-value-v10">ScholarshipBoard</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">1 award worth</span>
+                  <span class="info-value-v10">$1,000</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Deadline</span>
+                  <span class="info-value-v10 deadline-highlight-v10">March 31, 2026</span>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="card scholarship-card">
-            <h3>USA</h3>
-            <ul>
-              <li>Fulbright</li>
-              <li>Gates</li>
-              <li>Stanford Global Scholarships</li>
-            </ul>
+
+          <!-- Card 2 -->
+          <article class="scholar-card-v10">
+            <div class="card-img-wrapper-v10">
+              <img src="./assets/3.webp" alt="No Essay Scholarship">
+            </div>
+            <div class="card-body-v10">
+              <h4 class="card-body-title-v10">$10,000 "No Essay" Universal Scholarship</h4>
+              <div class="info-table-v10">
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Offered by</span>
+                  <span class="info-value-v10">ScholarshipBoard</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">1 award worth</span>
+                  <span class="info-value-v10">$10,000</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Next deadline</span>
+                  <span class="info-value-v10 deadline-highlight-v10">April 30, 2026</span>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="card scholarship-card">
-            <h3>UK</h3>
-            <ul>
-              <li>Chevening</li>
-              <li>Rhodes</li>
-              <li>Commonwealth Scholarships</li>
-            </ul>
-          </article>
-          <article class="card scholarship-card">
-            <h3>Japan</h3>
-            <ul>
-              <li>MEXT</li>
-              <li>JASSO Scholarships</li>
-            </ul>
-          </article>
-          <article class="card scholarship-card">
-            <h3>India</h3>
-            <ul>
-              <li>TATA</li>
-              <li>INSA</li>
-              <li>UGC Scholarships</li>
-            </ul>
+
+          <!-- Card 3 -->
+          <article class="scholar-card-v10">
+            <div class="card-img-wrapper-v10">
+              <img src="./assets/4.webp" alt="Broad Horizons Scholarship">
+            </div>
+            <div class="card-body-v10">
+              <h4 class="card-body-title-v10">"Broad Horizons" Scholarship for Juniors</h4>
+              <div class="info-table-v10">
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Offered by</span>
+                  <span class="info-value-v10">ScholarshipBoard</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">1 award worth</span>
+                  <span class="info-value-v10">$1,000</span>
+                </div>
+                <div class="info-row-v10">
+                  <span class="info-label-v10">Deadline</span>
+                  <span class="info-value-v10 deadline-highlight-v10">May 31, 2026</span>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section cta-section">
-      <div class="container cta-box">
-        <h2>Spin & Win Your Scholarship Guide Today!</h2>
-        <a
-          class="btn btn-success"
-          id="footerWhatsappBtn"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://wa.me/000000000000?text=Hi%20ScholarshipBoard!%20I%20want%20my%20scholarship%20guide"
-        >
-          Claim via WhatsApp
-        </a>
+    <section id="testimonials" class="section-testimonials-v12">
+      <div class="container container-v12">
+        <div class="testimonials-header-v12">
+          <div class="badge-v12">
+            <span class="slash-v12">/</span> SUCCESS STORIES
+          </div>
+          <h2 class="title-v12">Real Impact From Real Students</h2>
+          <p class="intro-v12">Genuine feedback from students who avoided debt and secured their future through ScholarshipBoard matches.</p>
+        </div>
+
+        <div class="testimonials-content-v12">
+          <div class="avatars-column-v12" id="testimonial-avatars">
+            <div class="avatar-v12" data-id="0"><img src="./assets/student-1.png" alt="Student"></div>
+            <div class="avatar-v12 active-v12" data-id="1"><img src="./assets/student-cutout.png" alt="Student"></div>
+            <div class="avatar-v12" data-id="2"><img src="./assets/student-2.png" alt="Student"></div>
+          </div>
+
+          <div class="testimonial-card-v12" id="testimonial-card">
+            <div class="quote-icon-v12">“</div>
+            <div class="card-inner-v12" id="testimonial-inner">
+              <h3 class="quote-text-v12">ScholarshipBoard finally connected me with the right opportunities with clarity resulting in a full-ride scholarship.</h3>
+              <p class="quote-sub-v12">Trust their matching engine — the curated list they delivered completely transformed my college application journey.</p>
+              
+              <div class="author-info-v12">
+                <strong class="author-name-v12">Sarah Jenkins</strong>
+                <span class="author-title-v12">Undergraduate at Stanford University</span>
+              </div>
+              
+              <div class="card-footer-v12">
+                <div class="dashed-line-v12"></div>
+                <div class="stars-v12">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-cta-v12">
+          <p>Want to see how impactful our matches can be?</p>
+          <a href="#scholarships" class="btn-schedule-v12">FIND MY MATCHES</a>
+        </div>
       </div>
     </section>
-  </main>
 
-  <footer id="contact" class="footer">
-    <div class="container footer-content">
-      <p>Follow us: Instagram | TikTok</p>
-      <p>
-        Contact:
-        <a
-          id="footerWhatsappContact"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://wa.me/000000000000?text=Hi%20ScholarshipBoard!%20I%20want%20my%20scholarship%20guide"
-        >
-          WhatsApp
-        </a>
-      </p>
-      <p class="muted">
-        This is a POC for ScholarshipBoard - curated for students seeking scholarships.
-      </p>
-    </div>
-  </footer>
+    <section class="scholarship-cta-section-v11">
+      <div class="container footer-cta-v11">
+        <div class="footer-cta-card-v11 banner-compact-v11">
+          <div class="footer-cta-bg-shapes-v11">
+            <div class="shape-v11 shape-1"></div>
+            <div class="shape-v11 shape-2"></div>
+            <div class="shape-v11 shape-3"></div>
+          </div>
+          
+          <div class="footer-cta-layout-v11">
+            <div class="footer-cta-left-v11">
+              <div class="student-img-wrapper-v11 img-pop-v11">
+                <img src="./assets/char.png" alt="Scholarship Student" class="student-img-v11" />
+              </div>
+            </div>
+            
+            <div class="footer-cta-right-v11">
+              <h2 class="footer-cta-title-v14 title-pop-v11">Check Eligibility & Secure <br/><span class="gradient-text-v11">Your Scholarship</span></h2>
+              <p class="footer-cta-text-v14 text-compact-v11">
+                Join 1.5 million students finding debt-free education. Our expert-vetted database matches your profile with 100% success.
+              </p>
+              <div class="footer-cta-actions-v11">
+                <a href="https://wa.me/000000000000" class="btn-whatsapp-v11 btn-v11-logo">
+                  <span class="wa-icon-v11">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  </span>
+                  Join Community
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-v11">
+
+
+      <div class="footer-main-v11">
+        <div class="container grid-footer-v11">
+          <div class="col-footer-v11 about-col">
+            <a href="/" class="logo-link">
+              <img class="logo-mark" src="./assets/scholarshipicon.png" alt="ScholarshipBoard" />
+              <span class="brand">ScholarshipBoard</span>
+            </a>
+            <p class="footer-desc-v11">
+              Empowering students globally to access higher education through curated, vetted, and direct scholarship opportunities.
+            </p>
+            <div class="social-links-v11">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="col-footer-v11">
+            <h4>Find Scholarships</h4>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Postgraduate</a></li>
+              <li><a href="#">No Essay Scholarships</a></li>
+              <li><a href="#">Women's Scholarships</a></li>
+            </ul>
+          </div>
+
+          <div class="col-footer-v11">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Application Guide</a></li>
+              <li><a href="#">Writing an Essay</a></li>
+              <li><a href="#">Interview Tips</a></li>
+              <li><a href="#">Financial Aid 101</a></li>
+            </ul>
+          </div>
+
+          <div class="col-footer-v11">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-v11">
+        <div class="container bottom-inner-v11">
+          <p>© 2026 ScholarshipBoard. All rights reserved.</p>
+          <p class="muted-v11">Designed for students, by students. Built for impact.</p>
+        </div>
+      </div>
+    </footer>
+
 
   <script src="./js/config.js"></script>
   <script src="./js/script.js"></script>
